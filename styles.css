@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container { 
+    border: 1px solid black;
+    display: grid;
+}
+
+.header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    background-color: yellow;
+    display: flex;
+}
+
+.sidebarNav {
+    background-color: blue;
+}
+.sidebarNav a{
+    text-decoration: none;
+    color: white;
+}
+
+.mainContent {
+    background-color: #b3b3b3;
+}
+
+.projects {
+    background-color: violet;
+    display: grid;
+}
+
+.articleCard {
+
+}
+
+.cardIcons {
+    display: flex;
+}
+#favoriteStarIcon {
+
+}
+#followEyeBallIcon {
+
+}
+#shareIcon {
+
+}
+
+.announcements {
+    background-color: orangered;
+}
+
+.announcements hr {
+    max-width: 75%;
+}
+
+.trending {
+    background-color: pink;
+}
+
+.trendingCard {
+    display: flex;
+}
+
