@@ -6,12 +6,13 @@
 .container { 
     border: 1px solid black;
     display: grid;
+    min-height: 100vh;
 }
 
 .header {
     background-color: aqua;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .nav {
@@ -20,6 +21,11 @@
 }
 
 .sidebarNav {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 1/2;
+    grid-row: 2/4;
     background-color: blue;
 }
 .sidebarNav a{
@@ -28,22 +34,28 @@
 }
 
 .mainContent {
+    display: grid;
     background-color: #b3b3b3;
 }
 
 .projects {
+    margin: 2%;
     background-color: violet;
-    display: grid;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 15px;
+    border: 1px solid black;
 }
 
 .articleCard {
-
+    border: 1px solid black;
 }
 
 .cardIcons {
     display: flex;
+    
 }
-#favoriteStarIcon {
+/* #favoriteStarIcon {
 
 }
 #followEyeBallIcon {
@@ -51,7 +63,7 @@
 }
 #shareIcon {
 
-}
+} */
 
 .announcements {
     background-color: orangered;
