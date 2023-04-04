@@ -5,64 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-nDZ0tKSZ0l64/BhcVQzAyNtbE7s0yX9u17mV1whvGZPYbOQ2oOzIZfV58wpvKzvlYTDyF1woT9q3fNOGKvJdyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dashboard Project</title>
 </head>
 <body>
     <!-- <h1>Dashboard Project</h1> -->
     <div class="container">
-        <div class="header">
-            <!-- search icon -->
-            <h4>&#128269;</h4>
-            <!-- inputForSearch -->
-            <input type="text" placeholder="Search Projects">
-            <!-- notification bell -->
-            <h4>&#128276;</h4>
-            <!-- profile icon -->
-            <h3>&#9210;</h3>
-            <!-- profile name -->
-            <h3>Filip Tatarnik</h3>
-        </div>
-        <div class="nav">
-            <!-- profile image -->
-            <h3>&#9210;</h3>
-            <!-- Hi There... Profile name -->
-            <div><h4>Hi there,</h4></div>
-            <br>
-            <div><h2>Filip Tatarnik (@filip)</h2></div>
-            <!-- new button -->
-            <button class="new">New</button>
-            <button class="upload">upload</button>
-            <button class="share">Share</button>
-            <!-- upload button -->
-            <!-- Share Button -->
-        </div>
         <div class="sidebarNav">
-            <ul>
-                <li><a href="">Dashboard</a></li>
+            <ul class="sidebarUL">
+                <li><i class="fab fa-twitter"></i></li>
+                <li><a href=""><h2>Dashboard</h2></a></li>
                 <!-- Home link -->
-                <li><a href="">Home</a></li>
+                <li><h3><a href="">Home</h3></a></li>
                 <!-- Profile link -->
-                <li><a href="">Profile</a></li>
+                <li><h3><a href="">Profile</h3></a></li>
                 <!-- Messages link -->
-                <li><a href="">Messages</a></li>
+                <li><h3><a href="">Messages</h3></a></li>
                 <!-- History link -->
-                <li><a href="">History</a></li>
+                <li><h3><a href="">History</h3></a></li>
                 <!-- Tasks link -->
-                <li><a href="">Tasks</a></li>
+                <li><h3><a href="">Tasks</h3></a></li>
                 <!-- Communities link -->
-                <li><a href="">Communities</a></li>
+                <li><h3><a href="">Communities</h3></a></li>
                 <br>
                 <!-- Settings link -->
-                <li><a href="">Settings</a></li>
+                <li><h3><a href="">Settings</h3></a></li>
                 <!-- Support link -->
-                <li><a href="">Support</a></li>
+                <li><h3><a href="">Support</h3></a></li>
                 <!-- Privacy link -->
-                <li><a href="">Privacy</a></li>
+                <li><h3><a href="">Privacy</h3></a></li>
             </ul>
         </div>
+        <div class="header">
+            <div class="topHeader">
+                <div class="searchInputbar">
+                    <!-- search icon -->
+                    <div class="searchIcon">
+                        <h4>&#128269;</h4>
+                    </div>
+                    <!-- inputForSearch -->
+                    <form action="#">
+                        <input type="text" placeholder="Search Projects" class="search">
+                    </form>
+                </div>
+                <div class="iconName">
+                    <!-- notification bell -->
+                    <h4>&#128276;</h4>
+                    <!-- profile icon -->
+                    <h3>&#9210;</h3>
+                    <!-- profile name -->
+                <h3>Filip Tatarnik</h3>
+                </div>
+            </div>
+            <div class="bottomHeader">
+                <div class="profileName">
+                    <!-- profile image -->
+                    <h3>&#9210;</h3>
+                    <!-- Hi There... Profile name -->
+                    <div><h4>Hi there,</h4></div>
+                    <br>
+                    <div><h2>Filip Tatarnik (@filip)</h2></div>
+                </div>
+                <div class="uploadButtons">
+                    <!-- new button -->
+                    <button class="new">New</button>
+                    <button class="upload">upload</button>
+                    <button class="share">Share</button>
+                    <!-- upload button -->
+                    <!-- Share Button -->
+                </div>
+            </div>
+        </div>
         <div class="mainContent">
-                <h3>Your Projects</h3>
-                <div class="projects">
+            <h3>Your Projects</h3>
+            <div class="projects">
 
                 <!-- Articles -->
                 <article class="articleCard">
@@ -142,6 +158,32 @@
                         </div>
                     </div>
                 </article>
+                <!-- Project Article Card, use grid -->
+                <article class="articleCard">
+                                    <div>
+                                        <h4>Money Maker</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sit? Omnis at error, quo tempora magni nulla assumenda quae veritatis fuga provident in dolore repudiandae commodi ducimus excepturi. Cupiditate, quam.</p>
+                                        <br>
+                                        <div class="cardIcons">
+                                            <h2 id="favoriteStarIcon">&#9734;</h2>
+                                            <h2 id="followEyeBallIcon">&#128065;</h2>
+                                            <h2 id="shareIcon">&#10762;</h2>
+                                        </div>
+                                    </div>
+                </article>
+                <!-- Project Article Card, use grid -->
+                <article class="articleCard">
+                    <div>
+                        <h4>Money Maker</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sit? Omnis at error, quo tempora magni nulla assumenda quae veritatis fuga provident in dolore repudiandae commodi ducimus excepturi. Cupiditate, quam.</p>
+                        <br>
+                        <div class="cardIcons">
+                            <h2 id="favoriteStarIcon">&#9734;</h2>
+                            <h2 id="followEyeBallIcon">&#128065;</h2>
+                            <h2 id="shareIcon">&#10762;</h2>
+                        </div>
+                    </div>
+                    </article>
             </div>
             <h2>Announcements</h2>
             <div class="announcements">
