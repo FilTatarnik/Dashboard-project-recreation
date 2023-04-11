@@ -45,13 +45,18 @@
 }
 
 .iconName {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 350px; /* set a minimum width */
+    margin-right: 20px; /* add a margin */
 }
 
 .profileName {
     display: flex;
-    align-items: center;
-    margin: 5px 5px 5px 5px;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 350px;
 }
 
 .uploadButtons {
@@ -162,6 +167,7 @@ button {
     max-height: 25vh;
     align-items: center;
     margin-top: 50%;
+    margin-right: 20px; /* add a margin */
     align-items: flex-end;
     background-color: rgb(255, 255, 255);
     width: 25ch;
