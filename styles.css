@@ -115,7 +115,18 @@ button {
 .sidebarUL {
     display: grid;
     grid-row: 3;
+    margin-left: -20px;
 }
+
+.sidebarLI {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebarLI i {
+    margin-right: 20px;
+  }
 
 .mainContent {
     display: grid;
