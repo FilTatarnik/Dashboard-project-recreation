@@ -35,7 +35,8 @@
 .bottomHeader {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
+
     margin: 15px 15px 10px 15px;
 }
 
